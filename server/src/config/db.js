@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 require("dotenv").config();
 
 const { MONGODB_URL } = process.env;
+console.log("MONGODB_URL:", MONGODB_URL); // Debugging line to check the URL
 
 const connectDB = async () => {
     if (!MONGODB_URL) {
